@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=latin');
+
+$primary-font: 'Roboto', sans-serif;
+$light-weight: 300; $regular-weight: 400; $medium-weight: 500; $bold-weight: 700;
+
+$color-teal: #26BCB9; $color-white: #FFF; $color-grey-light: #F8F8F8; $color-grey: #D8D8D8; $color-grey-dark: #8F8F8F; $color-black: #082626;
+
+@mixin h1 {
+    font-family: $primary-font;
+    font-weight: $medium-weight;
+    font-size: 4.5em;
+}
+@mixin h1Light {
+    font-family: $primary-font;
+    font-weight: $light-weight;
+    font-size: 4.5em;
+}
+
+@mixin h3 {
+    font-family: $primary-font !important;
+    font-weight: $bold-weight !important;
+    font-size: 2.5em !important;
+}
+
+@mixin h4 {
+    font-family: $primary-font !important;
+    font-weight: $bold-weight !important;
+    font-size: 1.5em !important;
+}
+
+@mixin h5Bold {
+    font-family: $primary-font;
+    font-weight: $bold-weight;
+    font-size: 1em;
+}
+@mixin h5Medium {
+    font-family: $primary-font;
+    font-weight: $medium-weight;
+    font-size: 1em;
+}
+@mixin h5Body {
+    font-family: $primary-font;
+    font-weight: $regular-weight;
+    font-size: 1em;
+}
+@mixin h5Light {
+    font-family: $primary-font;
+    font-weight: $light-weight;
+    font-size: 1em;
+}
+
+body {
+    font-family: $primary-font !important;
+    color: $color-black;
+}
+
+h1 {
+    @include h1;
+}
+h1.light {
+    @include h1Light;
+}
+h3 {
+    @include h3;
+}
+h4 {
+    @include h4;
+}
+h5 {
+    @include h5Medium;
+}
+
+button {
+    font-family: $primary-font !important;
+    font-weight: $regular-weight !important;
+    font-size: 1.5em !important;
+}
+
+// START Instructional
+.nutritionBanner {
+    background-size: cover;
+    * {
+        color: white !important;
+    }
+    height: 160px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nutritionBanner .subheader {
+    font-family: $primary-font;
+    font-weight: $regular-weight;
+    font-size: 1.5em;
+}
+
+// START TabMenu
+.nutritionTabMenu {
+    border-bottom: 8px solid $color-grey-light !important;
+    font-family: $primary-font !important;
+}
+
+.nutritionTabMenu .item {
+    margin: 0 0 -8px !important;
+    border-bottom-width: 8px !important;
+    @include h5Medium;
+}
+
+.nutritionTabMenu .active.item {
+    color: $color-teal !important;
+    border-color: $color-teal !important;
+    @include h5Medium;
+}
+
+// START FoodList
+.downloadPdf {
+    @include h4;
+    margin-bottom: 1em;
+}
+.downloadPdf a {
+    color: $color-grey-dark !important;
+    text-decoration: underline;
+}
+.downloadPdf a:hover {
+    color: $color-teal !important;
+}
+
+.pdf {
+    width: 100%;
+    min-height: 600px;
+    height: 100%;
+}
+
+// START Recipes
+.nutritionSearch .prompt{
+    border-radius: 0.5em !important;
+}
+
+.nutritionRecipeDivider {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.nutritionCardGrid {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+}
+
+// START ModalImageCard
+.nutritionCard, .mealPlanCard {
+    @include h5Light;
+    width: 360px !important;
+    height: 240px !important;
+    border-radius: 8px !important;
+}
+.nutritionCard.raised, .mealPlanCard.raised {
+    box-shadow: 0 4px 8px 1px rgba($color-grey-dark, 0.5) !important;
+}
+.nutritionCard .image, .mealPlanCard .image {
+    object-fit: cover;
+    width: 360px;
+    height: 170px;
+}
+.nutritionCard > .content > .header, .mealPlanCard > .content > .header {
+    @include h4;
+    margin-bottom: 0 !important;
+}
+
+.nutritionCard > .content > .header + .description, .mealPlanCard > .content > .header + .description {
+    margin-top: 0.2em !important;
+}
+
+// Modal Section
+.nutritionModalSubheader {
+    @include h5Medium;
+    color: $color-grey-dark;
+}
+
+.nutritionModal {
+    padding: 2.25em !important;
+}
+.nutritionModal .item {
+    @include h5Body;
+}
+.nutritionModal .item::before {
+    @include h4;
+    color: $color-teal !important;
+}
+.nutritionModal .image {
+    object-fit: cover;
+    width: 480px;
+    height: 240px;
+}
+
+.nutritionIngredients {
+    padding-top: 2rem !important;
+}
+.nutritionIngredients .item::before {
+    font-size: 3em !important;
+    padding-right: 1rem !important;
+    margin-left: -1.5rem !important;
+}
+
+.nutritionIngredient {
+    margin-left: 1rem;
+}
+
+.nutritionDirections {
+    top: 2.5rem;
+}
+.nutritionDirectionStep .item + .item {
+    margin-top: 1rem;
+}
+
+// START ImageCard
+.mealPlanCard .icon {
+    color: $color-teal !important;
+}
+
+// START MealPlan
+.mealPlanButton {
+    width: 140px !important;
+    height: 64px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px 1px rgba($color-grey-dark, 0.5) !important;
+    background: $color-white !important;
+    color: $color-teal !important;
+    font-weight: $bold-weight !important;
+}
+.mealPlanButton.active {
+    color: $color-white !important;
+    background: $color-teal !important;
+    font-weight: $regular-weight !important;
+}
+
+.mealPlanKey {
+    margin-top: -2rem !important;
+    .icon {
+        color: $color-teal;
+    }
+}
+.mealPlanKey :not(:last-child) {
+    margin-right: 0.75rem;
+}
+
+.mealPlanKeyItem {
+    @include h5Light;
+}
+.mealPlanKeyItem .icon {
+    margin-right: 0.5rem !important;
+}
+
+.mealPlanCardGrid {
+    margin: 0 !important;
+}

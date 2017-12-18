@@ -1,7 +1,7 @@
 {
-  "name": "create-react-library",
+  "name": "gainlife-nutrition",
   "version": "1.0.0",
-  "description": "React NPM library starter kit based on Facebook's create react app",
+  "description": "Nutrition component for GainLife",
   "main": "build/index.js",
   "scripts": {
     "start": "node scripts/start.js",
@@ -12,11 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/udiliaInc/create-react-library.git"
   },
-  "author": "Dimitri Mikadze <dimitri@udilia.com>",
-  "bugs": {
-    "url": "https://github.com/udiliaInc/create-react-library/issues"
-  },
-  "homepage": "https://github.com/udiliaInc/create-react-library#readme",
+  "author": "Nathan Fu <nathan.fu@gmail.com.com>",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "7.1.2",
@@ -56,6 +52,7 @@
     "react-dom": "^15.6.1",
     "react-error-overlay": "^1.0.10",
     "sass-loader": "^6.0.6",
+    "semantic-ui-css": "^2.2.12",
     "style-loader": "0.18.2",
     "sw-precache-webpack-plugin": "0.11.4",
     "url-loader": "^0.5.9",
@@ -108,5 +105,9 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "semantic-ui-react": "^0.77.1"
   }
 }
