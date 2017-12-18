@@ -3,7 +3,7 @@ import { Container, Grid, Button, Header, Icon, Divider } from 'semantic-ui-reac
 
 import CardGrid from './CardGrid';
 
-import '../components/Nutrition.scss';
+import '../../scss/Nutrition.scss';
 
 export default class MealPlan extends React.Component {
   constructor(props) {

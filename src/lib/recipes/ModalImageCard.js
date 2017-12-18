@@ -2,7 +2,7 @@ import React from 'react';
 import { Modal, Card, Image } from 'semantic-ui-react';
 import RecipeModal from './RecipeModal';
 
-import '../components/Nutrition.scss';
+import '../../scss/Nutrition.scss';
 
 export default class ModalImageCard extends React.PureComponent {
     render() {

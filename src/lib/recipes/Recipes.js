@@ -13,7 +13,7 @@ export default class Recipes extends React.Component {
   resetComponent = () => this.setState({ isLoading: false, results: this.props.recipes, value: '', result: {}, modalOpen: false })
 
   handleResultSelect = (e, { result }) => {
-    this.setState({ value: result.title, result: result, modalOpen: true })
+    this.setState({ result: result, modalOpen: true })
   }
 
   handleSearchChange = (e, { value }) => {

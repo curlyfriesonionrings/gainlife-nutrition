@@ -1,7 +1,7 @@
 import React from 'react';
 import { Icon, Modal, Embed } from 'semantic-ui-react';
 
-import '../components/Nutrition.scss';
+import '../../scss/Nutrition.scss';
 
 export default class Instructional extends React.PureComponent {
     render() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'semantic-ui-react';
 
-import '../components/Nutrition.scss';
+import '../../scss/Nutrition.scss';
 
 export default class FoodList extends React.PureComponent {
     render() {

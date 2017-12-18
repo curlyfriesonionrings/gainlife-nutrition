@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Menu } from 'semantic-ui-react';
 
-import '../components/Nutrition.scss';
+import '../../scss/Nutrition.scss';
 
 // Props: [{ menutitle: Component }]
 export default class TabMenu extends React.PureComponent {
