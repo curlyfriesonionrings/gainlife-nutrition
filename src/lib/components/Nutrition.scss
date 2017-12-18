@@ -140,6 +140,9 @@ $color-teal: #26BCB9; $color-white: #FFF; $color-grey-light: #F8F8F8; $color-gre
 .nutritionCard > .content > .header, .mealPlanCard > .content > .header {
     @include h4;
     margin-bottom: 0 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .nutritionCard > .content > .header + .description, .mealPlanCard > .content > .header + .description {
@@ -169,6 +172,9 @@ $color-teal: #26BCB9; $color-white: #FFF; $color-grey-light: #F8F8F8; $color-gre
 }
 
 .nutritionRecipeLabel {
+    @include h3;
+}
+.nutritionRecipeTitle {
     @include h3;
 }
 
