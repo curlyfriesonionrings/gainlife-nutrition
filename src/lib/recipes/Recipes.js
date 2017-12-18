@@ -34,7 +34,7 @@ export default class Recipes extends React.Component {
       <Grid>
         <Grid.Row>
           <Grid.Column width={11}>
-            <Header as='h3'>Recipes</Header>
+            <Header as='h3' className='nutritionRecipeLabel'>Recipes</Header>
           </Grid.Column>
           <Grid.Column width={5}>
             <Search

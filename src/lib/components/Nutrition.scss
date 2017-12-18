@@ -49,33 +49,6 @@ $color-teal: #26BCB9; $color-white: #FFF; $color-grey-light: #F8F8F8; $color-gre
     font-size: 1em;
 }
 
-body {
-    font-family: $primary-font !important;
-    color: $color-black;
-}
-
-h1 {
-    @include h1;
-}
-h1.light {
-    @include h1Light;
-}
-h3 {
-    @include h3;
-}
-h4 {
-    @include h4;
-}
-h5 {
-    @include h5Medium;
-}
-
-button {
-    font-family: $primary-font !important;
-    font-weight: $regular-weight !important;
-    font-size: 1.5em !important;
-}
-
 // START Instructional
 .nutritionBanner {
     background-size: cover;
@@ -88,7 +61,9 @@ button {
     justify-content: center;
     align-items: center;
 }
-
+.nutritionHeader {
+    @include h1Light;
+}
 .nutritionBanner .subheader {
     font-family: $primary-font;
     font-weight: $regular-weight;
@@ -193,6 +168,10 @@ button {
     height: 240px;
 }
 
+.nutritionRecipeLabel {
+    @include h3;
+}
+
 .nutritionIngredients {
     padding-top: 2rem !important;
 }
@@ -227,11 +206,19 @@ button {
     background: $color-white !important;
     color: $color-teal !important;
     font-weight: $bold-weight !important;
+    font-family: $primary-font !important;
+    font-size: 1.5em !important;
 }
 .mealPlanButton.active {
     color: $color-white !important;
     background: $color-teal !important;
     font-weight: $regular-weight !important;
+    font-family: $primary-font !important;
+    font-size: 1.5em !important;
+}
+
+.mealPlanDay {
+    @include h3;
 }
 
 .mealPlanKey {

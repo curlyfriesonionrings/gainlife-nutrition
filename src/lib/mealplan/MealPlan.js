@@ -32,7 +32,7 @@ export default class MealPlan extends React.Component {
             );
           })}
         </Grid>
-        <Header as='h3'>Day {currentDay + 1}</Header>
+        <Header as='h3' className='mealPlanDay'>Day {currentDay + 1}</Header>
         <Header floated='right' size='tiny' className='mealPlanKey'>
           {iconKey.map((entry, index) => {
             return <span key={index} className='mealPlanKeyItem'><Icon name={entry.icon} />{entry.label}</span>;

@@ -9,7 +9,7 @@ export default class Instructional extends React.PureComponent {
 
         const headerGroup = (
             <div className='nutritionBanner' style={{backgroundImage: "url(" + imgUri + ")"}}>
-                <h1 className='light'><Icon name={iconName} color='red'/>{title}</h1>
+                <h1 className='nutritionHeader'><Icon name={iconName} color='red'/>{title}</h1>
                 <div className='subheader'>{welcomeText}</div>
             </div>
         )
